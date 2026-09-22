@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Extended Euclidean Algorithm</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="background">
+
+    <div class="grid"></div>
+
+    <div class="glow glow1"></div>
+
+    <div class="glow glow2"></div>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        ∑ EUCLID-X
+
+    </div>
+
+    <div class="status">
+
+        <span></span>
+
+        ALGORITHM ONLINE
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="badge">
+
+        ADVANCED NUMBER THEORY
+
+    </div>
+
+    <h1>
+
+        EXTENDED EUCLIDEAN
+
+        <span>ALGORITHM</span>
+
+    </h1>
+
+    <p>
+
+        Explore the Euclidean Algorithm,
+
+        Back Substitution,
+
+        and Bézout's Identity
+
+        step by step.
+
+    </p>
+
+</section>
+
+
+<!-- ================= INPUT ================= -->
+
+<section class="inputPanel">
+
+    <h2>ENTER TWO INTEGERS</h2>
+
+    <p class="subtitle">
+
+        The algorithm will calculate
+
+        gcd(a,b), x and y.
+
+    </p>
+
+
+    <div class="inputs">
+
+        <div class="inputBox">
+
+            <label>INTEGER A</label>
+
+            <input
+                type="number"
+                id="numberA"
+                placeholder="Enter A"
+            >
+
+        </div>
+
+
+        <div class="operator">
+
+            ,
+
+        </div>
+
+
+        <div class="inputBox">
+
+            <label>INTEGER B</label>
+
+            <input
+                type="number"
+                id="numberB"
+                placeholder="Enter B"
+            >
+
+        </div>
+
+    </div>
+
+
+    <button id="calculateBtn">
+
+        ▶ RUN ALGORITHM
+
+    </button>
+
+</section>
+
+
+<!-- ================= RESULT ================= -->
+
+<section class="resultPanel">
+
+    <div class="resultCard">
+
+        <small>GCD</small>
+
+        <strong id="gcdResult">—</strong>
+
+    </div>
+
+
+    <div class="resultCard">
+
+        <small>X</small>
+
+        <strong id="xResult">—</strong>
+
+    </div>
+
+
+    <div class="resultCard">
+
+        <small>Y</small>
+
+        <strong id="yResult">—</strong>
+
+    </div>
+
+</section>
+
+
+<!-- ================= IDENTITY ================= -->
+
+<section class="identity">
+
+    <div class="sectionTitle">
+
+        BÉZOUT'S IDENTITY
+
+    </div>
+
+    <div id="identityEquation">
+
+        ax + by = gcd(a,b)
+
+    </div>
+
+</section>
+
+
+<!-- ================= VISUAL ALGORITHM ================= -->
+
+<section class="algorithmSection">
+
+    <div class="sectionHeading">
+
+        <span>01</span>
+
+        EUCLIDEAN DIVISION
+
+    </div>
+
+
+    <div id="divisionSteps"
+
+         class="steps">
+
+        <div class="empty">
+
+            Enter two numbers and run the algorithm.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BACK SUBSTITUTION ================= -->
+
+<section class="algorithmSection">
+
+    <div class="sectionHeading">
+
+        <span>02</span>
+
+        BACK SUBSTITUTION
+
+    </div>
+
+
+    <div id="substitutionSteps"
+
+         class="steps">
+
+        <div class="empty">
+
+            Back substitution will appear here.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COEFFICIENTS ================= -->
+
+<section class="algorithmSection">
+
+    <div class="sectionHeading">
+
+        <span>03</span>
+
+        COEFFICIENT CALCULATION
+
+    </div>
+
+
+    <div id="coefficientSteps"
+
+         class="steps">
+
+        <div class="empty">
+
+            Coefficient calculations will appear here.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BEGINNER GUIDE ================= -->
+
+<section class="guide">
+
+    <h2>
+
+        🧠 HOW DOES IT WORK?
+
+    </h2>
+
+
+    <div class="guideGrid">
+
+        <div class="guideCard">
+
+            <div>01</div>
+
+            <h3>Divide</h3>
+
+            <p>
+
+                Divide the larger number by
+
+                the smaller number and find
+
+                the remainder.
+
+            </p>
+
+        </div>
+
+
+        <div class="guideCard">
+
+            <div>02</div>
+
+            <h3>Repeat</h3>
+
+            <p>
+
+                Use the previous divisor and
+
+                remainder until the remainder
+
+                becomes zero.
+
+            </p>
+
+        </div>
+
+
+        <div class="guideCard">
+
+            <div>03</div>
+
+            <h3>Back Substitute</h3>
+
+            <p>
+
+                Express the GCD as a
+
+                combination of the original
+
+                two numbers.
+
+            </p>
+
+        </div>
+
+
+        <div class="guideCard">
+
+            <div>04</div>
+
+            <h3>Get x and y</h3>
+
+            <p>
+
+                The final coefficients satisfy
+
+                ax + by = gcd(a,b).
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FORMULA ================= -->
+
+<section class="formula">
+
+    <h2>CORE FORMULA</h2>
+
+    <div class="formulaBox">
+
+        a = bq + r
+
+    </div>
+
+    <div class="formulaBox">
+
+        ax + by = gcd(a,b)
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONSOLE ================= -->
+
+<section class="console">
+
+    <h2>
+
+        SYSTEM LOG
+
+    </h2>
+
+    <div id="console">
+
+        > Euclidean Engine Initialized...
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <strong>
+
+        EUCLID-X
+
+    </strong>
+
+    <p>
+
+        Advanced Extended Euclidean Algorithm
+
+        Visualizer
+
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
